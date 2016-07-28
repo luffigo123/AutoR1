@@ -8,7 +8,8 @@ public class Log4jInstance {
 
 	public static Logger getLoggerInstance(){
 		logger = Logger.getRootLogger();
-		String log4jXml = System.getProperty("user.dir") + "\\src\\main\\resources\\log4j.xml";
+//		String log4jXml = System.getProperty("user.dir") + "\\src\\main\\resources\\log4j.xml";
+		String log4jXml = Config.class.getProtectionDomain().getCodeSource().getLocation().getPath() + "/log4j.xml";
 		DOMConfigurator.configure(log4jXml);
 		return logger;
 	}
