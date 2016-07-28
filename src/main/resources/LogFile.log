@@ -1,0 +1,59 @@
+INFO (com.vmware.g11n.log.Racetrack:23)- ******** TEST SET BEGIN ********
+INFO (com.vmware.g11n.log.Racetrack:23)- Locale = de_DE
+INFO (com.vmware.g11n.log.Racetrack:23)- BrowserVerNo = 34.1
+INFO (com.vmware.g11n.log.Racetrack:23)- Validation = true
+INFO (com.vmware.g11n.log.Racetrack:23)- Automation = true
+INFO (com.vmware.g11n.log.Racetrack:23)- HostOS = win2k8r2sp1
+INFO (com.vmware.g11n.log.Racetrack:23)- ServerBuildID = 46125
+INFO (com.vmware.g11n.log.Racetrack:23)- User = fxiong
+INFO (com.vmware.g11n.log.Racetrack:23)- Description = Bumblebee Test Set
+INFO (com.vmware.g11n.log.Racetrack:23)- StartTime = 2016-07-28 15:36:02
+INFO (com.vmware.g11n.log.Racetrack:23)- Product = NSX-Transformers
+INFO (com.vmware.g11n.log.Racetrack:23)- TestType = Regression
+INFO (com.vmware.g11n.log.Racetrack:23)- HostOSPlatform = x64
+INFO (com.vmware.g11n.log.Racetrack:23)- BU = NSBU
+INFO (com.vmware.g11n.log.Racetrack:23)- Language = German
+INFO (com.vmware.g11n.log.Racetrack:23)- BrowserType = Firefox
+INFO (com.vmware.g11n.log.Racetrack:23)- BuildID = 3788307
+INFO (com.vmware.g11n.log.Racetrack:23)- Branch = Bumblebee
+INFO (com.vmware.g11n.log.Racetrack:23)- BuildType = Release
+INFO (com.vmware.g11n.log.Racetrack:23)- ReleaseNumber = 5.0
+INFO (com.vmware.g11n.log.Racetrack:23)- BrowserPlatform = x64
+INFO (com.vmware.g11n.log.TestCaseConfig:38)- **** TEST CASE BEGIN ****
+INFO (com.vmware.g11n.log.TestCaseConfig:39)- ID: GOIS001
+INFO (com.vmware.g11n.log.TestCaseConfig:40)- Name: AddIPSets
+INFO (com.vmware.g11n.log.TestCaseConfig:41)- Description: null
+INFO (org.springframework.context.support.ClassPathXmlApplicationContext:573)- Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@d2fa64: startup date [Thu Jul 28 15:36:02 CST 2016]; root of context hierarchy
+INFO (org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317)- Loading XML bean definitions from class path resource [ApplicationContext.xml]
+INFO (com.vmware.g11n.log.TestCaseConfig:23)- Add a new IPSets for deleting
+INFO (root:200)- 
+
+jsonArray: [{"_create_time":1469691374846,"_last_modified_user":"admin","_revision":0,"ip_addresses":["192.168.1.1","192.168.2.1-192.168.2.10"],"_system_owned":false,"resource_type":"IPSet","_last_modified_time":1469691374846,"id":"4f1431ec-73bc-4eb6-98d7-99e0ca5c57ee","display_name":"?????????÷‹ﬂ??\u20a9??????????????","_create_user":"admin"}]
+INFO (com.vmware.g11n.log.TestCaseConfig:23)- --Checkpoint: Add IPSets Successfully!
+INFO (com.vmware.g11n.log.TestCaseConfig:23)- ----true : Actual is {true} and expected is {true}
+INFO (root:35)- 
+
+jsonArray: [{"_create_time":1469691374846,"_last_modified_user":"admin","_revision":0,"ip_addresses":["192.168.1.1","192.168.2.1-192.168.2.10"],"_system_owned":false,"resource_type":"IPSet","_last_modified_time":1469691374846,"id":"4f1431ec-73bc-4eb6-98d7-99e0ca5c57ee","display_name":"?????????÷‹ﬂ??\u20a9??????????????","_create_user":"admin"}]
+INFO (root:46)- Target Property value : 4f1431ec-73bc-4eb6-98d7-99e0ca5c57ee
+INFO (root:200)- 
+
+jsonArray: []
+INFO (com.vmware.g11n.log.TestCaseConfig:23)- --Checkpoint: Delete IPSets Successfully!
+INFO (com.vmware.g11n.log.TestCaseConfig:23)- ----true : Actual is {false} and expected is {false}
+INFO (com.vmware.g11n.log.TestCaseConfig:23)- Add a new IPSets for deleting
+INFO (root:200)- 
+
+jsonArray: [{"_create_time":1469691376968,"_last_modified_user":"admin","_revision":0,"ip_addresses":["192.168.1.1","192.168.2.1-192.168.2.10"],"_system_owned":false,"resource_type":"IPSet","_last_modified_time":1469691376968,"id":"d1cb39f9-ddec-4c55-b006-a80ae7ad754b","display_name":"÷‹ﬂ","_create_user":"admin"}]
+INFO (com.vmware.g11n.log.TestCaseConfig:23)- --Checkpoint: Add IPSets Successfully!
+INFO (com.vmware.g11n.log.TestCaseConfig:23)- ----true : Actual is {true} and expected is {true}
+INFO (root:35)- 
+
+jsonArray: [{"_create_time":1469691376968,"_last_modified_user":"admin","_revision":0,"ip_addresses":["192.168.1.1","192.168.2.1-192.168.2.10"],"_system_owned":false,"resource_type":"IPSet","_last_modified_time":1469691376968,"id":"d1cb39f9-ddec-4c55-b006-a80ae7ad754b","display_name":"÷‹ﬂ","_create_user":"admin"}]
+INFO (root:46)- Target Property value : d1cb39f9-ddec-4c55-b006-a80ae7ad754b
+INFO (root:200)- 
+
+jsonArray: []
+INFO (com.vmware.g11n.log.TestCaseConfig:23)- --Checkpoint: Delete IPSets Successfully!
+INFO (com.vmware.g11n.log.TestCaseConfig:23)- ----true : Actual is {false} and expected is {false}
+INFO (com.vmware.g11n.log.TestCaseConfig:23)- **** TEST CASE END: PASS ****
+INFO (com.vmware.g11n.log.TestCaseConfig:23)- ******** TEST SET END ********
