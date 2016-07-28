@@ -11,8 +11,9 @@ import java.util.HashMap;
 public class Config {
 	private static Config config = null;
 	public  HashMap<String, String> ConfigMap = new HashMap<String, String>();
-	private String configFile = System.getProperty("user.dir") + "\\src\\main\\resources\\Config.cfg";
-	
+//	private String configFile = System.getProperty("user.dir") + "\\src\\main\\resources\\Config.cfg";
+String filepath = Config.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+private String configFile = filepath + "/Config.cfg";
 	private Config()
 	{
 		readConfigFile();

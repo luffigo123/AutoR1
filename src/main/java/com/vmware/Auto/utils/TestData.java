@@ -9,7 +9,9 @@ import java.util.Collection;
 import java.util.HashMap;
 
 public class TestData {
-	private static String TestDataFile = System.getProperty("user.dir") + "\\src\\main\\resources\\TestData_" + Config.getInstance().ConfigMap.get("InputLanguage");
+//	private static String TestDataFile = System.getProperty("user.dir") + "\\src\\main\\resources\\TestData_" + Config.getInstance().ConfigMap.get("InputLanguage");
+	private static String filepath = Config.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+	private static String TestDataFile = filepath +  "/TestData_" + Config.getInstance().ConfigMap.get("InputLanguage");
 	private static HashMap<String, String> TestDataMap = readDataFile();
 	private TestData(){}
 	public static final Collection<String> AllTestData = TestDataMap.values();
